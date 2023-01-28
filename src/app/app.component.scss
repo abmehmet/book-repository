@@ -1,0 +1,17 @@
+.nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #3f51b5;
+  color: #fff;
+  display: flex;
+  padding: 0 1rem;
+  align-items: center;
+  height: 4rem;
+  font: 2rem Poppins, sans-serif;
+}
+
+a{
+  margin-right: 1rem;
+  color: white;
+}
