@@ -14,12 +14,15 @@
     <!--ngFor Kullanıldı-->
     <mat-card class="mat-elevation-z5" *ngFor="let summary of summaries" (click)="clickCard(summary.id)">
       <mat-card-content>
+
         <div id="summary-show">
-          <!--(two way binding) property ve pipe kullanıldı. -->
+          <!--(one way binding) property kullanıldı-->
+          <!--pipe kullanıldı-->
           <mat-card-title><b> Kitap Adı :  {{ summary.bookName | uppercase}}</b><br></mat-card-title>
           <span> Kitap özeti : {{ summary.bookSummary | slice:0:200 }} ... </span>
         </div>
       </mat-card-content>
+
     </mat-card>
 
   </form>

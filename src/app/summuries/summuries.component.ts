@@ -13,7 +13,6 @@ export class SummuriesComponent implements OnInit {
   bookSummaryModel!: '';
 
   summaries: Summary[] = [];
-
   constructor() {
   }
 

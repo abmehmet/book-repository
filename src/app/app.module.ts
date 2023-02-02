@@ -1,6 +1,5 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
-
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {SweetAlert2Module} from '@sweetalert2/ngx-sweetalert2';
@@ -14,6 +13,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatButtonModule} from '@angular/material/button';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { SummaryDetailComponent } from './summary-detail/summary-detail.component';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -33,6 +33,7 @@ import { SummaryDetailComponent } from './summary-detail/summary-detail.componen
     MatCardModule,
     MatInputModule,
     MatButtonToggleModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
