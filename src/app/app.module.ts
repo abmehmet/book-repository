@@ -14,12 +14,14 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { SummaryDetailComponent } from './summary-detail/summary-detail.component';
 import {MatIconModule} from '@angular/material/icon';
+import { SummariesModalComponent } from './summuries/summaries-modal/summaries-modal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SummuriesComponent,
     SummaryDetailComponent,
+    SummariesModalComponent,
   ],
   imports: [
     BrowserModule,
