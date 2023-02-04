@@ -16,6 +16,7 @@ export class SummariesModalComponent implements OnInit {
     bookSummary: ['', Validators.required]
   });
   summaryId = Number(this.route.snapshot.paramMap.get('id'));
+  disableSelect = new FormControl(true);
 
   constructor(
     private fb: FormBuilder,
