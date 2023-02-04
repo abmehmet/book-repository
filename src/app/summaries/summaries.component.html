@@ -36,8 +36,9 @@
           <a [routerLink]="['/summary-modal', summary.id]">Düzenle</a>
         </button>
 
-
-
+        <button style="margin-left:1rem" mat-stroked-button (click)="deleteSummary(summary.id)">
+          Sil
+        </button>
       </div>
     </div>
   </mat-card>

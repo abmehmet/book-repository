@@ -25,4 +25,8 @@ export class SummariesComponent implements OnInit {
   showNumber(id?: number): void {
     Swal.fire('Özet Numarası > ' + id);
   }
+
+  deleteSummary(summaryId?: number): void{
+
+  }
 }
