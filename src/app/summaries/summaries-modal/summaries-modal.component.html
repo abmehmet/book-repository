@@ -1,0 +1,23 @@
+<form [formGroup]="summaryForm" (ngSubmit)="onSubmit()">
+  <h2>ÖZET DÜZENLE</h2>
+
+  <div class="form-group input-group">
+    <div class="input-group-prepend">
+      <input type="text" class="form-control ng-valid" placeholder="Kitap Adı:" formControlName="bookName">
+    </div>
+  </div>
+
+  <br>
+
+  <div class="form-group input-group">
+    <div class="input-group-prepend">
+      <textarea class="form-control form-control ng-valid" placeholder="Özet" formControlName="bookSummary"></textarea>
+    </div>
+  </div>
+
+  <br>
+
+  <button type="submit" mat-stroked-button [disabled]="summaryForm.invalid">KAYDET</button>
+
+
+</form>

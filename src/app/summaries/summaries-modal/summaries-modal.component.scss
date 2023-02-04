@@ -1,0 +1,70 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.3s ease;
+}
+
+#baslik{
+  font-size: 2rem;
+  text-align: center;
+  color: #7a7e7b;
+}
+
+html {
+  font-size: 62.5%; /*Normalde 1rem=16px idi, (10/16=0.625). 1rem=10px olacak şeklinde daha kolay nalşılıyor*/
+  overflow-x: hidden; /* Yatayda bulunan scroll barı kapat*/
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+}
+
+.container {
+  padding: .5rem 7%;
+}
+
+input, textarea {
+  margin-bottom:1rem;
+  border-color: darkolivegreen;
+  border-style:groove;
+  font-size: 1.5rem;
+}
+
+.btn{
+  margin-left: auto;
+  margin-right: 0;
+  padding: .5rem .75rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #4d5353;
+  font-weight: bold;
+}
+
+.btn:hover {
+  opacity: 0.4;
+}
+
+#summary-input{
+  margin: 1rem;
+  font-size: 0.75rem;
+}
+
+#summary-show{
+  margin: 1rem;
+  font-size: 1rem;
+}
+
+
+
+mat-card{
+  margin: 1rem;
+}

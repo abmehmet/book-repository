@@ -3,23 +3,17 @@ import {BrowserModule} from '@angular/platform-browser';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {SweetAlert2Module} from '@sweetalert2/ngx-sweetalert2';
-import {SummuriesComponent} from './summuries/summuries.component';
-import {FormsModule} from '@angular/forms';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatInputModule} from '@angular/material/input';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatCardModule} from '@angular/material/card';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatButtonModule} from '@angular/material/button';
-import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { SummaryDetailComponent } from './summary-detail/summary-detail.component';
-import {MatIconModule} from '@angular/material/icon';
-import { SummariesModalComponent } from './summuries/summaries-modal/summaries-modal.component';
+import { SummariesComponent } from './summaries/summaries.component';
+import { SummariesModalComponent } from './summaries/summaries-modal/summaries-modal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SummuriesComponent,
+    SummariesComponent,
     SummaryDetailComponent,
     SummariesModalComponent,
   ],
@@ -28,14 +22,9 @@ import { SummariesModalComponent } from './summuries/summaries-modal/summaries-m
     AppRoutingModule,
     SweetAlert2Module.forRoot(),
     FormsModule,
-    BrowserAnimationsModule,
     MatButtonModule,
-    MatCheckboxModule,
-    MatFormFieldModule,
     MatCardModule,
-    MatInputModule,
-    MatButtonToggleModule,
-    MatIconModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
