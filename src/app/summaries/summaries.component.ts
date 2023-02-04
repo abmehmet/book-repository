@@ -1,7 +1,8 @@
 import {Component, OnInit} from '@angular/core';
-import {Summary} from '../summary';
 import Swal from 'sweetalert2';
 import {SummaryService} from '../summary.service';
+import {MatDialog} from '@angular/material/dialog';
+import {QuestiondialogComponent} from './questiondialog/questiondialog.component';
 
 @Component({
   selector: 'app-summaries',
@@ -12,7 +13,7 @@ export class SummariesComponent implements OnInit {
   bookNameModel!: '';
   bookSummaryModel!: '';
 
-  constructor(public summaryService: SummaryService) {
+  constructor(public summaryService: SummaryService, public matDialog: MatDialog) {
   }
 
   ngOnInit(): void {
@@ -26,7 +27,13 @@ export class SummariesComponent implements OnInit {
     Swal.fire('Özet Numarası > ' + id);
   }
 
-  deleteSummary(summaryId?: number): void{
-
+  deleteSummary(summaryId?: number): void {
+    this.openDialog();
   }
+
+  openDialog(): boolean {
+    this.matDialog.open(QuestiondialogComponent);
+    return true;
+  }
+
 }

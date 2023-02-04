@@ -6,9 +6,12 @@ import {SweetAlert2Module} from '@sweetalert2/ngx-sweetalert2';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
-import { SummaryDetailComponent } from './summary-detail/summary-detail.component';
-import { SummariesComponent } from './summaries/summaries.component';
-import { SummariesModalComponent } from './summaries/summaries-modal/summaries-modal.component';
+import {SummaryDetailComponent} from './summary-detail/summary-detail.component';
+import {SummariesComponent} from './summaries/summaries.component';
+import {SummariesModalComponent} from './summaries/summaries-modal/summaries-modal.component';
+import {QuestiondialogComponent} from './summaries/questiondialog/questiondialog.component';
+import {MatDialog, MatDialogModule} from '@angular/material/dialog';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -16,6 +19,7 @@ import { SummariesModalComponent } from './summaries/summaries-modal/summaries-m
     SummariesComponent,
     SummaryDetailComponent,
     SummariesModalComponent,
+    QuestiondialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -24,7 +28,9 @@ import { SummariesModalComponent } from './summaries/summaries-modal/summaries-m
     FormsModule,
     MatButtonModule,
     MatCardModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatDialogModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
